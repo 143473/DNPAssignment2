@@ -15,10 +15,6 @@ namespace WebAPI.Data
         { 
             users = new List<User>();
            Seed();
-           foreach (var user in users)
-           {
-               Console.WriteLine(user.UserName);
-           }
         }
 
         public async Task<IList<User>>  GetUsersAsync()
@@ -59,7 +55,6 @@ namespace WebAPI.Data
             User user = users.FirstOrDefault(u => u.UserName.Equals(userName) && u.Password.Equals(password));
             if (user != null)
             {
-                Console.WriteLine(user.UserName + user.Id + user.Password + user.SecurityLevel + user.Role);
                 return user;
             } 
             throw new Exception("User not found");

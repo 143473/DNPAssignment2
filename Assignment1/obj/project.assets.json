@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\em_du\\RiderProjects\\DNPAssignment2\\Assignment1\\BlazorClient.csproj",
+      "projectUniqueName": "C:\\Users\\em_du\\DNPAssignment2\\DNPAssignment2\\Assignment1\\BlazorClient.csproj",
       "projectName": "BlazorClient",
-      "projectPath": "C:\\Users\\em_du\\RiderProjects\\DNPAssignment2\\Assignment1\\BlazorClient.csproj",
+      "projectPath": "C:\\Users\\em_du\\DNPAssignment2\\DNPAssignment2\\Assignment1\\BlazorClient.csproj",
       "packagesPath": "C:\\Users\\em_du\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\em_du\\RiderProjects\\DNPAssignment2\\Assignment1\\obj\\",
+      "outputPath": "C:\\Users\\em_du\\DNPAssignment2\\DNPAssignment2\\Assignment1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\em_du\\AppData\\Roaming\\NuGet\\NuGet.Config",

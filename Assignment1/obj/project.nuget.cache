@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gwGl1gpeF7Ul/PVOfIUCE3qFzoUR66PoS+RzXhbQeT6VER+zpe5kHQNw+zkkNYKmdNxgStGgHyws87B2F/j2Lw==",
+  "dgSpecHash": "lhItADkOndC89lKFX4/B+roEuZ/PXzxyXDqL/E60d/MLsuLk1KF1SemHcs4+sQZtZyatDeD9EnUYK1jCh3VfsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\em_du\\RiderProjects\\DNPAssignment2\\Assignment1\\BlazorClient.csproj",
+  "projectFilePath": "C:\\Users\\em_du\\DNPAssignment2\\DNPAssignment2\\Assignment1\\BlazorClient.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

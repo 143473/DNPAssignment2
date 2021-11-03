@@ -84,7 +84,7 @@ namespace WebAPI.Controllers
             try
             {
                 User added = await userService.AddUserAsync(user);
-                return Created($"/{added.UserName}", added); 
+                return Created($"/User/{added.UserName}", added); 
             }
             catch (Exception e)
             {
@@ -116,7 +116,6 @@ namespace WebAPI.Controllers
             try
             {
                 var user = await userService.ValidateUserAsync(userName, password);
-                Console.WriteLine(user.UserName + user.Id + user.Password + user.SecurityLevel + user.Role);
                 return Ok(user);
             }
             catch (Exception e)

@@ -75,7 +75,7 @@ namespace BlazorClient.Data
                 {
                     PropertyNamingPolicy = JsonNamingPolicy.CamelCase
                 });
-                Console.WriteLine(user.UserName + user.Id + user.Password + user.SecurityLevel + user.Role);
+      
                 return user;
             }
             catch (Exception e)
