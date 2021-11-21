@@ -29,7 +29,7 @@ namespace WebAPI
         {
             services.AddControllers();
             services.AddScoped<IAdultService, AdultService>();
-            services.AddScoped<IUserService, UserService>();
+            services.AddSingleton<IUserService, UserService>();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "WebAPI", Version = "v1"}); });
         }
 

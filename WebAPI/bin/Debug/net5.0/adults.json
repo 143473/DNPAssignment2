@@ -1,21 +1,6 @@
 [
   {
     "JobTitle": {
-      "JobTitle": "Business Development Manager",
-      "Salary": 71456
-    },
-    "Id": 2,
-    "FirstName": "Samara",
-    "LastName": "Humphrey",
-    "HairColor": "Black",
-    "EyeColor": "Brown",
-    "Age": 34,
-    "Weight": 37,
-    "Height": 145,
-    "Sex": "F"
-  },
-  {
-    "JobTitle": {
       "JobTitle": "Teacher",
       "Salary": 91588
     },
@@ -166,17 +151,32 @@
   },
   {
     "JobTitle": {
-      "JobTitle": "asdqwe",
-      "Salary": 170
+      "JobTitle": "Business Development Manager",
+      "Salary": 71456
+    },
+    "Id": 2,
+    "FirstName": "Samara",
+    "LastName": "Humphrey",
+    "HairColor": "Black",
+    "EyeColor": "Brown",
+    "Age": 34,
+    "Weight": 37,
+    "Height": 145,
+    "Sex": "F"
+  },
+  {
+    "JobTitle": {
+      "JobTitle": "frfrfr",
+      "Salary": 1231434343
     },
     "Id": 15,
-    "FirstName": "aaa",
-    "LastName": "sss",
-    "HairColor": "brwon",
-    "EyeColor": "Brown",
+    "FirstName": "aaabbbb",
+    "LastName": "aabbbb",
+    "HairColor": "qwsqwsw",
+    "EyeColor": "Gray",
     "Age": 18,
-    "Weight": 100,
+    "Weight": 45,
     "Height": 150,
-    "Sex": "M"
+    "Sex": "F"
   }
 ]

@@ -126,6 +126,7 @@ using Microsoft.AspNetCore.Components;
             try
             {
                 await ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLoginAsync(newUser.UserName, newUser.Password);
+                Console.WriteLine(newUser.UserName + newUser.Password);
                 NavigationManager.NavigateTo("/");
             }
             catch (Exception e)

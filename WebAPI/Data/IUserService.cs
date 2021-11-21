@@ -7,7 +7,7 @@ namespace WebAPI.Data
     public interface IUserService
     {
         Task<IList<User>> GetUsersAsync();
-        Task<User> AddUserAsync(User newUser);
+        Task AddUserAsync(User newUser);
         Task RemoveUserAsync(int? userId);
         Task<User> UpdateUserAsync(User user);
         Task<User> GetUserAsync(int? id);

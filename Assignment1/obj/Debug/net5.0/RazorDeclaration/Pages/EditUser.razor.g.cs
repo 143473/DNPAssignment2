@@ -111,7 +111,7 @@ using BlazorClient.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 55 "C:\Users\em_du\DNPAssignment2\DNPAssignment2\Assignment1\Pages\EditUser.razor"
+#line 64 "C:\Users\em_du\DNPAssignment2\DNPAssignment2\Assignment1\Pages\EditUser.razor"
        
 
     [Parameter]
@@ -134,7 +134,6 @@ using BlazorClient.Models;
     {
         NavMgr.NavigateTo("/UsersList");
     }
-
 
 #line default
 #line hidden

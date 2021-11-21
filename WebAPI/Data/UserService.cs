@@ -9,12 +9,12 @@ namespace WebAPI.Data
 {
     public class UserService : IUserService
     {
-        private IList<User> users;
+        private static IList<User> users;
 
         public UserService()
-        { 
+        {
             users = new List<User>();
-           Seed();
+            Seed();
         }
 
         public async Task<IList<User>>  GetUsersAsync()
@@ -22,13 +22,16 @@ namespace WebAPI.Data
             return users;
         }
 
-        public async Task<User> AddUserAsync(User newUser)
+        public async Task AddUserAsync(User newUser)
         {
-            var nextId = users.Max(user => user.Id);
-            newUser.Id = ++nextId;
-            newUser.SecurityLevel = 1;
-            newUser.Role = "user";
-            return newUser;
+            users.Add(new User()
+            {
+                Id = users.Max(user => user.Id)+1,
+                Password = newUser.Password,
+                Role = "user",
+                SecurityLevel = 1,
+                UserName = newUser.UserName
+            });
         }
 
         public async Task RemoveUserAsync(int? userId)

@@ -80,11 +80,13 @@ namespace WebAPI.Controllers
             {
                 return BadRequest(ModelState);
             }
-
             try
             {
-                User added = await userService.AddUserAsync(user);
-                return Created($"/User/{added.UserName}", added); 
+                await userService.AddUserAsync(user);
+               // User added = await userService.AddUserAsync(user);
+               // return Created($"/User/{user.UserName}", added);
+               return StatusCode(200);
+
             }
             catch (Exception e)
             {
@@ -112,7 +114,6 @@ namespace WebAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<User>> ValidateUserAsync([FromQuery]string userName, [FromQuery]string password)
         {
-            Console.WriteLine("Here");
             try
             {
                 var user = await userService.ValidateUserAsync(userName, password);

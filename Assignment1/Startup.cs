@@ -28,13 +28,13 @@ namespace BlazorClient
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<IAdultData, CloudAdultService>();
-            services.AddScoped<IUserService, CloudUserService>();
+            services.AddSingleton<IUserService, CloudUserService>();
             services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("user", a => a.RequireAuthenticatedUser().RequireClaim("Level", "1", "2","3"));
                 options.AddPolicy("admin", a => a.RequireAuthenticatedUser().RequireClaim("Level", "3"));
-                options.AddPolicy("moderator", a => a.RequireAuthenticatedUser().RequireClaim("Role", "moderator","admin"));
+                options.AddPolicy("moderator", a => a.RequireAuthenticatedUser().RequireClaim("Level", "2","3"));
             });
         }
 

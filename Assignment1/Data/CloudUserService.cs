@@ -66,7 +66,6 @@ namespace BlazorClient.Data
 
         public async Task<User> ValidateUserAsync(string username, string password)
         {
-
             try
             {
                 var stringAsync = 
